@@ -1,2 +1,6 @@
 - repo: ntpeters/vim-better-whitespace
 - repo: shime/vim-livedown
+- repo: kassio/neoterm
+- repo: szw/vim-maximizer
+- repo: xolox/vim-notes
+- repo: xolox/vim-misc
