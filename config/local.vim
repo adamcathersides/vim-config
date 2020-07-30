@@ -1,8 +1,10 @@
-let g:neoterm_shell fish
-map <leader>sws :StripWhitespace<cr>
+let g:neoterm_shell = 'fish'
+map <leader>z :tab split<cr>
+nnoremap <leader>sws :StripWhitespace<cr>
 nnoremap <leader>nl i<cr><esc>
-nnoremap <leader>tv sg <bar> :Tnew<cr>
-nnoremap <leader>th sv <bar> :Tnew<cr>
-nnoremap <leader>tc :Tclear<cr>
+nmap <leader>tv :vsplit <bar> :Tnew<cr>
+nmap <leader>th :split <bar> :Tnew<cr>
 tnoremap jk <C-\><C-n>
 tnoremap kj <C-\><C-n>
+nnoremap <S-j> :tabprevious<CR>
+nnoremap <S-k> :tabnext<CR>
