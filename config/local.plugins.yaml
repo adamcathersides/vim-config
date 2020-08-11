@@ -4,3 +4,4 @@
 - repo: szw/vim-maximizer
 - repo: xolox/vim-notes
 - repo: xolox/vim-misc
+- repo: dhruvasagar/vim-zoom
