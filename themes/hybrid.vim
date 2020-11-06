@@ -46,8 +46,8 @@ highlight TabLineAltShade  ctermfg=238 ctermbg=236 guifg=#444444 guibg=#303030
 " }}}
 
 " Highlights: Statusline {{{
-highlight StatusLine   ctermfg=236 ctermbg=248 guifg=#30302c guibg=#a8a897
-highlight StatusLineNC ctermfg=236 ctermbg=242 guifg=#30302c guibg=#666656
+highlight StatusLine   ctermfg=236 ctermbg=248 guifg=#30302c guibg=#a8a897 cterm=reverse gui=reverse
+highlight StatusLineNC ctermfg=236 ctermbg=242 guifg=#30302c guibg=#666656 cterm=reverse gui=reverse
 
 " Filepath color
 highlight User1 guifg=#D7D7BC guibg=#30302c ctermfg=251 ctermbg=236
@@ -71,6 +71,18 @@ highlight User8 guifg=#ffb964 guibg=#30302c ctermfg=215 ctermbg=236
 highlight NonText cterm=NONE ctermfg=NONE
 highlight! link jsFutureKeys PreProc
 highlight! WarningMsg  ctermfg=100 guifg=#CCC566
+
+" if has('nvim') || has('patch-7.4.2218')
+" 	highlight EndOfBuffer gui=NONE guifg=#303030
+" endif
+
+if has('nvim')
+	highlight TermCursor    gui=NONE guibg=#cc22a0
+	highlight TermCursorNC  gui=NONE guibg=#666666
+	highlight TermCursor    gui=NONE guibg=#cc22a0
+	highlight TermCursorNC  gui=NONE guibg=#666666
+	" highlight NormalNC      gui=NONE guibg=#2c2c2c guifg=#bfbfbf
+endif
 
 highlight! link vimFunc Function
 highlight! link vimFunction Function
@@ -192,6 +204,12 @@ highlight! link deniteSource__LocationListWarning PreProc
 " Plugin: vim-highlightedyank {{{
 " ---
 highlight! link HighlightedyankRegion DiffText
+" }}}
+
+" Plugin: vim-shot-f {{{
+" ---
+highlight! link ShotFGraph Number
+highlight! link ShotFBlank ErrorMsg
 " }}}
 
 " Plugin: vim-signature {{{
