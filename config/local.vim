@@ -9,3 +9,12 @@ tnoremap <esc> <C-\><C-n>
 tnoremap <esc> <C-\><C-n>
 nnoremap <S-j> :tabprevious<CR>
 nnoremap <S-k> :tabnext<CR>
+nnoremap ∆ 8j
+nnoremap ˚ 8k
+if has('nvim')
+          let $GIT_EDITOR = 'nvr --remote-tab-wait'
+                let $VISUAL = 'nvr --remote-tab-wait'
+                let $EDITOR = 'nvr --remote-tab-wait'
+                autocmd FileType gitcommit,gitrebase,gitconfig set bufhidden=delete
+                autocmd BufEnter knife-edit*.json set bufhidden=delete
+endif
