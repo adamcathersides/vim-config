@@ -1,4 +1,5 @@
 let g:neoterm_shell = 'fish'
+let g:elite_mode = 1
 map <leader>z :tab split<cr>
 nnoremap <leader>sws :StripWhitespace<cr>
 nnoremap <leader>nl i<cr><esc>
