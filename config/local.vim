@@ -19,3 +19,4 @@ if has('nvim')
     autocmd FileType gitcommit,gitrebase,gitconfig set bufhidden=delete
     autocmd BufEnter knife-edit*.json set bufhidden=delete
 endif
+

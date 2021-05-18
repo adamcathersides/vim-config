@@ -6,3 +6,6 @@
 - repo: xolox/vim-misc
 - repo: dhruvasagar/vim-zoom
 - repo: tpope/vim-rbenv
+- repo: equalsraf/neovim-gui-shim
+- repo: rafi/vim-venom
+  on_ft: python
